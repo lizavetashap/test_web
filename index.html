@@ -2,18 +2,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Image Example</title>
+    <title>Animation Example</title>
     <style>
-        .bg {
-            width: 200px;
-            height: 200px;
-            background-image: url('https://www.ferra.ru/imgs/2024/05/08/05/6460496/c2150453d059e8999c5f0b211ce334f7c869147c.jpg');
-            background-size: cover;
+        @keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+        .animate {
+            width: 100px;
+            height: 100px;
+            animation: example 5s infinite;
         }
     </style>
 </head>
 <body>
-    <div class="bg"></div>
+    <div class="animate"></div>
 </body>
 </html>
 
