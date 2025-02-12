@@ -2,25 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Example</title>
+    <title>Pseudo Elements</title>
     <style>
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+        .box::before {
+            content: "Before";
+            color: red;
         }
-        .item {
-            border: 1px solid black;
-            padding: 20px;
+        .box::after {
+            content: "After";
+            color: blue;
         }
     </style>
 </head>
 <body>
-    <div class="grid">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-    </div>
+    <div class="box">Content</div>
 </body>
 </html>
+
 
 
