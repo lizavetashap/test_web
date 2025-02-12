@@ -1,21 +1,20 @@
-<html>
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Height Example</title>
-      <style>
-          .box {
-              height: 200px;
-              overflow: hidden;
-          }
-          .content {
-              height: 300px;
-          }
-      </style>
-  </head>
-  <body>
-      <div class="box">
-          <div class="content">Content that overflows.</div>
-      </div>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Example</title>
+    <style>
+        :root {
+            --main-color: coral;
+        }
+        .box {
+            background-color: var(--main-color);
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
 </html>
