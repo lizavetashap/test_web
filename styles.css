@@ -1,30 +1,25 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    line-height: 1.6;
 }
 
-h1 {
-    color: #333;
+.content {
+    max-width: 600px;
 }
 
-.underline-example {
-    text-decoration: underline;
-    text-decoration-color: red; /* Цвет подчеркивания */
+.initial-letter {
+    position: relative;
+    font-size: 20px; /* Основной размер шрифта */
 }
 
-.line-through-example {
-    text-decoration: line-through;
-    text-decoration-style: dashed; /* Стиль зачеркивания */
-    text-decoration-color: green; /* Цвет зачеркивания */
+.drop-cap {
+    font-size: 4em; /* Увеличенный размер первой буквы */
+    float: left; /* Плавающее позиционирование для обтекания текста */
+    line-height: 0.8; /* Высота строки для уменьшения расстояния между строками */
+    margin-right: 10px; /* Отступ справа для отделения от текста */
+    margin-top: 5px; /* Отступ сверху для поднятия буквы */
+    color: #c00; /* Цвет увеличенной буквы */
 }
 
-.overline-example {
-    text-decoration: overline;
-    text-decoration-color: blue; /* Цвет надчеркивания */
-}
-
-.combined-example {
-    text-decoration: underline line-through;
-    text-decoration-color: purple; /* Цвет комбинированного оформления */
-    text-decoration-style: wavy; /* Стиль комбинированного оформления */
 }
