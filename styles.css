@@ -8,22 +8,15 @@ h1 {
     color: #333;
 }
 
-.custom-counter {
-    counter-reset: custom-counter; /* Сброс счетчика */
-    list-style: none; /* Убираем стандартные маркеры */
-    padding-left: 0; /* Убираем отступы */
+.multi-column {
+    column-count: 3; /* Задаем количество колонок */
+    column-gap: 20px; /* Задаем расстояние между колонками */
+    background-color: white; /* Фон для контента */
+    padding: 20px; /* Отступы внутри блока */
+    border-radius: 5px; /* Закругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
 }
 
-.custom-counter li {
-    counter-increment: custom-counter; /* Увеличиваем счетчик */
-    margin-bottom: 10px;
-    position: relative; /* Для абсолютного позиционирования псевдоэлемента */
-}
-
-.custom-counter li::before {
-    content: "Элемент " counter(custom-counter) ": "; /* Используем счетчик */
-    position: absolute; /* Абсолютное позиционирование */
-    left: -50px; /* Положение текста */
-    color: #007BFF; /* Цвет текста */
-    font-weight: bold; /* Жирный шрифт */
+.multi-column p {
+    break-inside: avoid; /* Избегаем разрывов внутри абзацев */
 }
