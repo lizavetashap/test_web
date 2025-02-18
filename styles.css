@@ -1,24 +1,29 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
-.smooth-text {
-    font-size: 48px;
+h1 {
     color: #333;
-    /* Используем различные свойства для сглаживания шрифта */
-    -webkit-font-smoothing: antialiased; /* Safari */
-    -moz-osx-font-smoothing: grayscale; /* Firefox */
-    font-smooth: always; /* Не стандартное свойство */
 }
 
-.no-smooth-text {
-    font-size: 48px;
-    color: #333;
-    /* Без дополнительных свойств сглаживания */
+.custom-counter {
+    counter-reset: custom-counter; /* Сброс счетчика */
+    list-style: none; /* Убираем стандартные маркеры */
+    padding-left: 0; /* Убираем отступы */
+}
+
+.custom-counter li {
+    counter-increment: custom-counter; /* Увеличиваем счетчик */
+    margin-bottom: 10px;
+    position: relative; /* Для абсолютного позиционирования псевдоэлемента */
+}
+
+.custom-counter li::before {
+    content: "Элемент " counter(custom-counter) ": "; /* Используем счетчик */
+    position: absolute; /* Абсолютное позиционирование */
+    left: -50px; /* Положение текста */
+    color: #007BFF; /* Цвет текста */
+    font-weight: bold; /* Жирный шрифт */
 }
