@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.smooth-text {
+    font-size: 48px;
+    color: #333;
+    /* Используем различные свойства для сглаживания шрифта */
+    -webkit-font-smoothing: antialiased; /* Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+    font-smooth: always; /* Не стандартное свойство */
+}
+
+.no-smooth-text {
+    font-size: 48px;
+    color: #333;
+    /* Без дополнительных свойств сглаживания */
+}
