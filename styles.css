@@ -1,25 +1,3 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
-}
-
-.content {
-    max-width: 600px;
-}
-
-.initial-letter {
-    position: relative;
-    font-size: 20px; /* Основной размер шрифта */
-}
-
-.drop-cap {
-    font-size: 4em; /* Увеличенный размер первой буквы */
-    float: left; /* Плавающее позиционирование для обтекания текста */
-    line-height: 0.8; /* Высота строки для уменьшения расстояния между строками */
-    margin-right: 10px; /* Отступ справа для отделения от текста */
-    margin-top: 5px; /* Отступ сверху для поднятия буквы */
-    color: #c00; /* Цвет увеличенной буквы */
-}
-
+    color: red;
 }
