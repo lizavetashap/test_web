@@ -1,5 +1,16 @@
 body {
     color: red;
+    background: F2E0BE;
+}
+table { 
+    width: 100%;
+    height: 100%; 
+}
+td { 
+    text-align: center; 
+}
+#2mc {
+    font-size: xx-large;
 }
 hr {
     background-color: red;
