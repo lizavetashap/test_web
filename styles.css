@@ -1,6 +1,7 @@
 body {
     color: red;
     background: F2E0BE;
+    font-size: xx-large;
 }
 table { 
     width: 100%;
@@ -8,9 +9,6 @@ table {
 }
 td { 
     text-align: center; 
-}
-#2mc {
-    font-size: xx-large;
 }
 hr {
     background-color: red;
