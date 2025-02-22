@@ -17,6 +17,7 @@ body {
 table {
     width: 100%;
     border-collapse: collapse; /* Убираем отступы между ячейками */
+    font-size: 100px;
 }
 
 td {
