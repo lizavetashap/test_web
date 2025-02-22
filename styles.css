@@ -8,7 +8,12 @@ body {
     overflow-y: auto; /* Добавляем прокрутку по вертикали */
     border: 1px solid #ccc; /* Рамка вокруг таблицы */
 }
-
+.sticky-column {
+    position: sticky; /* Делаем первый столбец липким */
+    left: 0; /* Прикрепляем к левому краю контейнера */
+    background-color: #fff; /* Цвет фона для первого столбца */
+    z-index: 2; /* Устанавливаем z-index, чтобы он был поверх других ячеек */
+}
 table {
     width: 100%;
     border-collapse: collapse; /* Убираем отступы между ячейками */
