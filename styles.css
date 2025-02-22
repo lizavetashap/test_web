@@ -12,12 +12,9 @@ body {
 .sticky {
   position: sticky;
   top: 0;
-  background-color: #0ebac5;
-  color: white;
-  text-transform: capitalize;
+  background-color: pink;
+  color: green;
   text-align: center;
-  font-size: 1.2rem;
-  display: grid;
   place-content: center;
 }
 hr {
