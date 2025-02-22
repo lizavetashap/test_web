@@ -9,17 +9,9 @@ body {
   margin: 20px;
   border-radius: 10px;
 }
-
-@media (width < 600px) {
-  .tile {
-    height: 150px;
-  }
-}
-
 .sticky {
   position: sticky;
   top: 0;
-
   background-color: #0ebac5;
   color: white;
   text-transform: capitalize;
